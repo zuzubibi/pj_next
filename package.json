@@ -1,0 +1,33 @@
+{
+  "name": "pj_next",
+  "version": "1.0.0",
+  "description": "my first next.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuzubibi/pj_next.git"
+  },
+  "keywords": [
+    "my_next"
+  ],
+  "author": "lee su been",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zuzubibi/pj_next/issues"
+  },
+  "homepage": "https://github.com/zuzubibi/pj_next#readme",
+  "dependencies": {
+    "next": "^16.2.12",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17"
+  }
+}
