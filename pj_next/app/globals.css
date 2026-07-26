@@ -24,3 +24,33 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.box {
+  padding: 8;
+  border: 2px solid black;
+  border-radius: 8;
+}
+
+.layout {
+  background-color: #0090FF;
+}
+
+.template {
+  background-color: #00A2C7;
+}
+
+.slot-default {
+  background-color: lightgray;
+}
+
+.slot-1 {
+  background-color: #ffe629;
+}
+
+.slot-2 {
+  background-color: #bdee63;
+}
+
+.page {
+  background-color: #f76b15;
+}
