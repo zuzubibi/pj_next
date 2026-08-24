@@ -1,16 +1,17 @@
+import PostFragment from "@/components/postFragment";
 interface PageProps {
-    params: Promise<{ postId: string }>;
+  params: Promise<{ postId: string }>;
 }
-
 async function PostItemPage(props: PageProps) {
-    const { params } = props;
-    const { postId } = await params;
+  const { params } = props;
+  const { postId } = await params;
 
-    return (
-        <div className="box page">
-            <p>{`Intercepted PostItemPage ${postId}`}</p>
-        </div>
-    );
+  return (
+    <div className="box page">
+      <p>{`Intercepted PostItemPage ${postId}`}</p>
+      <PostFragment postId={postId} />
+    </div>
+  );
 }
 
 export default PostItemPage;
