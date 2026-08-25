@@ -1,28 +1,18 @@
-
-'use client';
-
-import usePost from '@/lib/hooks/usePost';
-
 interface PostFragmentProps {
-    postId: string;
+    post: MyNextApp.Post;
 }
 
 function PostFragment(props: PostFragmentProps) {
-    const { postId } = props;
-
-    const { isLoading, post, error } = usePost(postId);
-
-    if (isLoading || !post) {
-        return <div>Loading...</div>;
-    }
-
-    if (error) {
-        return <div>Error!</div>;
-    }
+    const { post } = props;
 
     return (
         <div>
-            <img src={post.image} alt="post image" width="256px" height="auto" />
+            <img
+                src={post.image}
+                alt="post image"
+                width="256px"
+                height="auto"
+            />
             <h3>{post.title}</h3>
             <p>{post.content}</p>
         </div>
