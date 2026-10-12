@@ -52,7 +52,7 @@ const SignInPage = () => {
             href="/sign-up"
             className={cn(buttonVariants({ variant: "outline" }), "w-full")}
           >
-            Sign up
+            Sign Up
           </Link>
           <Link
             href="/"
