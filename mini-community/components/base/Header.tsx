@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { type Session } from "next-auth";
 import { signOut } from "next-auth/react";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 
 interface HeaderProps {
   session: Session | null;
@@ -31,9 +31,12 @@ function Header(props: HeaderProps) {
             </Button>
           </>
         ) : (
-          <Button asChild size="sm" variant="outline">
-            <Link href="/sign-in">Sign In</Link>
-          </Button>
+          <Link
+            href="/sign-in"
+            className={buttonVariants({ size: "sm", variant: "outline" })}
+          >
+            Sign In
+          </Link>
         )}
       </div>
     </header>
