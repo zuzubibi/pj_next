@@ -49,6 +49,6 @@ const selectPostBaseQuery = db
 
 export const preparedPostsQuery = selectPostBaseQuery.prepare();
 
-export const preparePostQuery = selectPostBaseQuery
+export const preparedPostQuery = selectPostBaseQuery
     .where(eq(userPostTable.id, sql.placeholder('postId')))
     .prepare();
